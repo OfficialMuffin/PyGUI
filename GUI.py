@@ -1,6 +1,6 @@
 """
-Project 2
-Created by Leon Whelan
+GUI
+Created by OfficalMuffin
 17/05/18
 
 """
