@@ -6,12 +6,13 @@ Created by OfficialMuffin
 """
 
 import tkinter
+from tkinter import *
 
 def login(): #Function to login
-    loginSuccess.configure(text="Loggged In")
+    loginSuccess.configure(text="Loggged In!")
 
 def register(): #Function to register
-    regComplete.configure(text="Registered")
+    regComplete.configure(text="Registered! You may now login")
 
 #Init tkinter GUI
 window = tkinter.Tk()
@@ -38,8 +39,8 @@ usr = tkinter.Label(window, text="Username: ", bg="#a1bdcd")
 usrnmfield = tkinter.Entry(window)
 psswd = tkinter.Label(window, text="Password: ", bg="#a1bdcd")
 psswdfield = tkinter.Entry(window)
-loginSuccess = tkinter.Label(window, text="Login Success!", command=login)
-login = tkinter.Button(window, text = "Login", fg="#a1bdcd", bg="#383a39")
+loginSuccess = tkinter.Label(window, bg="#a1bdcd")
+login = tkinter.Button(window, text = "Login", fg="#a1bdcd", bg="#383a39", command=login)
 
 #Print out Login labels on GUI
 usr.pack()
@@ -60,8 +61,8 @@ password = tkinter.Label(window, text="Password: ", bg="#a1bdcd")
 passwordfield = tkinter.Entry(window)
 confp = tkinter.Label(window, text="Confirm Password: ", bg="#a1bdcd")
 confirmpasswordfield = tkinter.Entry(window)
-regComplete = tkinter.Label(window, text="Registered!", command=register)
-register = tkinter.Button(window, text="Register", fg="#a1bdcd", bg="#383a39")
+regComplete = tkinter.Label(window, bg="#a1bdcd")
+register = tkinter.Button(window, text="Register", fg="#a1bdcd", bg="#383a39", command=register)
 
 #Print out Register labels on GUI
 eml.pack()
